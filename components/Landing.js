@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import NavBar from './NavBar'
 
 const Landing = () => {
   return (
-    <section className="h-screen flex">
+    <section className="h-screen flex relative">
+      <NavBar />
       <div className="flex flex-1 flex-col p-8 bg-darkBlue justify-center items-center">
         <h1 className="text-4xl text-white xl:text-6xl">
           <span className="text-lightBlue">5</span> - Tool Tournaments
