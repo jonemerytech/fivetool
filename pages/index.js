@@ -17,7 +17,7 @@ const Home = ({ tournaments }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="Description"
-          content="Scouts have long graded position players on five tools that are central to success in the game: hitting, hitting for power, running, fielding and throwing. The so-called “five-tool player” is a special breed, as those who truly rate above average in each category are extremely rare."
+          content="5-Tool Tournaments is a baseball tournament company that offers a variety of baseball tournaments for the community."
         />
         <meta
           name="Keywords"

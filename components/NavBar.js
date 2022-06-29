@@ -13,6 +13,9 @@ const NavBar = () => {
         />
       </div>
       <div className="space-x-6">
+        <Link href="/">
+          <a className="text-lightGray hover:text-lightBlue">Home</a>
+        </Link>
         <Link href="#about">
           <a className="text-lightGray hover:text-lightBlue">About</a>
         </Link>
@@ -22,10 +25,10 @@ const NavBar = () => {
         <Link href="#ourteam">
           <a className="text-lightGray hover:text-lightBlue">Our Team</a>
         </Link>
-        <Link href="#ourteam">
-          <a className="text-lightGray hover:text-lightBlue">Sponsors</a>
+        <Link href="#poweredby">
+          <a className="text-lightGray hover:text-lightBlue">Powered By</a>
         </Link>
-        <Link href="#tournamens">
+        <Link href="#tournaments">
           <a href="#tournamens" className="text-lightGray hover:text-lightBlue">
             Tournaments
           </a>

@@ -42,24 +42,29 @@ function MobileNav() {
               Home
             </a>
           </Link>
-          <Link href="/">
+          <Link href="#about">
             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
               About
             </a>
           </Link>
-          <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
-              Tournaments
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
-              Sponsors
-            </a>
-          </Link>
-          <Link href="/">
+          <Link href="#contact">
             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
               Contact
+            </a>
+          </Link>
+          <Link href="#ourteam">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
+              Our Team
+            </a>
+          </Link>
+          <Link href="#poweredby">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
+              Powered By
+            </a>
+          </Link>
+          <Link href="#tournaments">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-darkBlue hover:text-lightBlue">
+              Tournaments
             </a>
           </Link>
         </div>

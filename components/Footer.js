@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { BsTwitter } from 'react-icons/bs'
 import { BsFacebook } from 'react-icons/bs'
@@ -7,35 +8,72 @@ const Footer = () => {
   return (
     <section className="bg-darkBlue p-10">
       <div className="container mx-auto ">
-        <div className="grid grid-cols-2 gird-row-1 gap-4 justify-center items-center">
+        <div className="flex justify-between items-center">
           <div>
             <h1 className="text-lg text-lightGray">Company</h1>
             <ul className="list-none text-lightBlue">
-              <li className="hover:cursor-pointer hover:text-lightGray">
-                Home
-              </li>
-              <li className="hover:cursor-pointer hover:text-lightGray">
-                About
-              </li>
-              <li className="hover:cursor-pointer hover:text-lightGray">
-                Tournaments
-              </li>
+              <Link href="/">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Home
+                </li>
+              </Link>
+              <Link href="#about">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  About
+                </li>
+              </Link>
+
+              <Link href="#poweredby">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Powered By
+                </li>
+              </Link>
+              <Link href="#tournaments">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Tournaments
+                </li>
+              </Link>
+
+              <Link href="mailto:Info@fivetooltournaments.com?subject=Sponsor">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Want to sponsor an event?
+                </li>
+              </Link>
             </ul>
           </div>
           <div>
             <h1 className="text-lg text-lightGray">Support</h1>
             <ul className="list-none text-lightBlue">
-              <li className="hover:cursor-pointer hover:text-lightGray">
-                Contact Us
-              </li>
-              <li className="hover:cursor-pointer hover:text-lightGray">
-                Our Team
-              </li>
+              <Link href="#contact">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Contact
+                </li>
+              </Link>
+              <Link href="#ourteam">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Our Team
+                </li>
+              </Link>
             </ul>
+          </div>
+          <div>
+            <h1 className="text-lg text-lightGray">Powered By</h1>
+            <div className="w-24 h-24 bg-lightGray">
+              <Link href="https://www.figureitoutbaseball.com/en/">
+                <a target="_blank">
+                  <Image
+                    src="/images/fiobsponsor.jpg"
+                    alt="Sponsor 1"
+                    height={96}
+                    width={96}
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
 
-        <hr className="text-lightGray mt-7" />
+        {/* <hr className="text-lightGray mt-7" />
 
         <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between">
           <div>
@@ -63,20 +101,26 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <hr className="text-lightGray mt-7" />
 
         <div className="flex flex-col mt-7 text-lightBlue">
           <div className="flex justify-between">
-            <Link href="#ourteam">
-              <BsTwitter />
+            <Link href="https://twitter.com/5ToolTourneys">
+              <a target="_blank" rel="noopener noreferrer">
+                <BsTwitter />
+              </a>
             </Link>
-            <Link href="#ourteam">
-              <BsFacebook />
+            <Link href="https://www.facebook.com/fivetooltournaments/">
+              <a target="_blank" rel="noopener noreferrer">
+                <BsFacebook />
+              </a>
             </Link>
-            <Link href="#ourteam">
-              <BsInstagram />
+            <Link href="https://www.instagram.com/fivetooltournaments/">
+              <a target="_blank" rel="noopener noreferrer">
+                <BsInstagram />
+              </a>
             </Link>
           </div>
 

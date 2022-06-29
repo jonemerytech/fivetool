@@ -10,14 +10,18 @@ const Landing = () => {
           <span className="text-lightBlue">5</span> - Tool Tournaments
         </h1>
 
-        <p className="text-1xl mt-8 text-white md:px-14 xl:px-48">
-          <span className="text-lightBlue">|</span> Scouts have long graded
-          position players on five tools that are central to success in the
-          game: hitting, hitting for power, running, fielding and throwing. The
-          so-called “five-tool player” is a special breed, as those who truly
-          rate above average in each category are extremely rare.{' '}
-        </p>
-
+        <figure>
+          <blockquote cite="https://mlb.com">
+            <p className="text-1xl mt-8 text-white md:px-14 xl:px-48">
+              <span className="text-lightBlue">|</span> &quot;Scouts have long
+              graded position players on five tools that are central to success
+              in the game: hitting, hitting for power, running, fielding and
+              throwing. The so-called “five-tool player” is a special breed, as
+              those who truly rate above average in each category are extremely
+              rare.&quot; <cite>- MLB.com</cite>
+            </p>
+          </blockquote>
+        </figure>
         <div className="flex justify-center mt-8 md:justify-start">
           <Link href="#ourteam">
             <a className="p-3 px-6 pt-2 mt-4 text-white bg-lightBlue rounded baseline">

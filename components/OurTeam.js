@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const OurTeam = () => {
   return (
@@ -18,31 +19,33 @@ const OurTeam = () => {
               className="rounded"
             />
 
-            <h1 className="text-2xl text-lightBlue mt-2">
-              <span className="cursor-pointer">
-                <Image
-                  src="/images/email.svg"
-                  alt="Email Icon"
-                  height={16}
-                  width={16}
-                />
-              </span>{' '}
-              Tanner
-            </h1>
+            <h1 className="text-2xl text-lightBlue mt-2">Tanner</h1>
 
-            <p className="text-black text-left mt-2">
-              Hi, Im Tanner Reboulet and I grew up in Indianapolis, IN. Playing
-              travel baseball was easily one of the best experiences throughout
-              my childhood. From playing some of the best teams across the
-              country, to playing at some of the best facilities you can name,
-              to even playing in front of some of the biggest collegiate scouts.
-              Being in that dugout, and being able to compete with my teammates
-              for an opportunity to play at the next level… Those memories and
-              experiences with my teammates will last a lifetime. By creating
-              5-Tool Tournaments, we’re determined to get today’s kids that same
-              opportunity and experience. We are excited to continue our love
-              for the game of baseball with 5-Tool Tournaments.{' '}
-            </p>
+            <div className="flex items-center">
+              <Image
+                src="/images/email.svg"
+                alt="Email Icon"
+                height={16}
+                width={16}
+                className="fill-white"
+              />
+              <h1 className="text-1xl ml-2">
+                <Link href="mailto:T.reboulet@fivetooltournaments.com">
+                  T.reboulet@fivetooltournaments.com
+                </Link>
+              </h1>
+            </div>
+            <div className="flex items-center">
+              <Image
+                src="/images/phone.svg"
+                alt="Phone Icon"
+                height={16}
+                width={16}
+              />
+              <h1 className="text-1xl ml-2">
+                <Link href="tel:317-296-5673">317-296-5673</Link>
+              </h1>
+            </div>
           </div>
 
           <div className="px-3 mb-5 xl:px-8">
@@ -54,34 +57,33 @@ const OurTeam = () => {
               className="rounded"
             />
 
-            <h1 className="text-2xl text-lightBlue mt-2">
-              <span className="cursor-pointer">
-                <Image
-                  src="/images/email.svg"
-                  alt="Email Icon"
-                  height={16}
-                  width={16}
-                  className="fill-white"
-                />
-              </span>{' '}
-              Brandon
-            </h1>
+            <h1 className="text-2xl text-lightBlue mt-2">Brandon</h1>
 
-            <p className="text-black mt-2">
-              Hi, my name is Brandon Capps. I am a Greenville native and love
-              the game of Baseball. I currently reside north of Travelers Rest
-              with my fiancé and two dogs. I began to love this game at a young
-              age; by 4 I was picking up a ball and a bat. I worked my way to a
-              Little League state championship, a few high school region
-              championships, and ended up with a few accolades. Still wanting to
-              continue my love for the game, I began coaching at a small
-              baseball academy in Spartanburg, SC. As a coach I have won some
-              coaching championships with my 16u team. My passion for the game
-              has brought a lot of amazing memories that I will forever cherish.
-              With 5-Tool I hope to continue those memories. We will strive to
-              be the best. With that being said I am happy to be apart of the
-              5-Tool team.{' '}
-            </p>
+            <div className="flex items-center">
+              <Image
+                src="/images/email.svg"
+                alt="Email Icon"
+                height={16}
+                width={16}
+                className="fill-white"
+              />
+              <h1 className="text-1xl ml-2">
+                <Link href="mailto:B.Capps@fivetooltournaments.com">
+                  B.Capps@fivetooltournaments.com
+                </Link>
+              </h1>
+            </div>
+            <div className="flex items-center">
+              <Image
+                src="/images/phone.svg"
+                alt="Phone Icon"
+                height={16}
+                width={16}
+              />
+              <h1 className="text-1xl ml-2">
+                <Link href="tel:317-296-5673">317-296-5673</Link>
+              </h1>
+            </div>
           </div>
         </div>
       </div>

@@ -5,7 +5,10 @@ const Contact = () => {
   return (
     <section className="bg-lightGray flex flex-col justify-center items-center p-2 xl:h-96">
       <div className="container mx-auto flex flex-col justify-center items-center xl:relative">
-        <div className="h-80 w-3/4 p-5 bg-darkBlue rounded flex flex-col justify-center items-center text-center xl:absolute">
+        <div
+          className="h-80 w-3/4 p-5 bg-darkBlue rounded flex flex-col justify-center items-center text-center xl:absolute"
+          id="contact"
+        >
           <h1 className="text-1xl text-white xl:text-4xl">
             Need to get in touch?
           </h1>
@@ -20,7 +23,11 @@ const Contact = () => {
               width={16}
               className="fill-white"
             />
-            <h1 className="text-1xl ml-2">Info@fivetooltournaments.com</h1>
+            <h1 className="text-1xl ml-2">
+              <Link href="mailto:Info@fivetooltournaments.com">
+                Info@fivetooltournaments.com
+              </Link>
+            </h1>
           </div>
           <div className="text-white flex items-center">
             <Image
@@ -29,7 +36,9 @@ const Contact = () => {
               height={16}
               width={16}
             />
-            <h1 className="text-1xl ml-2">317-296-5673</h1>
+            <h1 className="text-1xl ml-2">
+              <Link href="tel:317-296-5673">317-296-5673</Link>
+            </h1>
           </div>
 
           <div className="flex justify-center md:justify-start">

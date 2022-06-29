@@ -3,6 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['files.stripe.com'],
+    loader: 'akamai',
+    path: '',
   },
 }
 
