@@ -31,5 +31,6 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          folder: ./out
-          branch: gh-pages
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
+        BRANCH: gh-pages
+        FOLDER: out
