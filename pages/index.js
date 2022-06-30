@@ -34,7 +34,7 @@ const Home = ({ tournaments }) => {
       <About />
       <Sponsors />
       <Contact />
-      <TournamentsSection tournaments={tournaments} />
+      <TournamentsSection tournaments={tournaments || 'Loading'} />
       <OurTeam />
     </>
   )
