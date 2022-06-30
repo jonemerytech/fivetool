@@ -12,7 +12,7 @@ const OurTeam = () => {
         <div className="flex flex-col justify-center items-center mt-10 xl:grid xl:grid-cols-2 xl:grid-rows-1 xl:gap-4">
           <div className="px-3 mb-5 xl:px-8">
             <Image
-              src="/fivetool/images/Tanner.webp"
+              src="/images/Tanner.webp"
               alt="Tanner"
               height={192}
               width={192}
@@ -23,7 +23,7 @@ const OurTeam = () => {
 
             <div className="flex items-center">
               <Image
-                src="/fivetool/images/email.svg"
+                src="/images/email.svg"
                 alt="Email Icon"
                 height={16}
                 width={16}
@@ -37,7 +37,7 @@ const OurTeam = () => {
             </div>
             <div className="flex items-center">
               <Image
-                src="/fivetool/images/phone.svg"
+                src="/images/phone.svg"
                 alt="Phone Icon"
                 height={16}
                 width={16}
@@ -50,7 +50,7 @@ const OurTeam = () => {
 
           <div className="px-3 mb-5 xl:px-8">
             <Image
-              src="/fivetool/images/Brandon.webp"
+              src="/images/Brandon.webp"
               alt="Brandon"
               height={192}
               width={192}
@@ -61,7 +61,7 @@ const OurTeam = () => {
 
             <div className="flex items-center">
               <Image
-                src="/fivetool/images/email.svg"
+                src="/images/email.svg"
                 alt="Email Icon"
                 height={16}
                 width={16}
@@ -75,7 +75,7 @@ const OurTeam = () => {
             </div>
             <div className="flex items-center">
               <Image
-                src="/fivetool/images/phone.svg"
+                src="/images/phone.svg"
                 alt="Phone Icon"
                 height={16}
                 width={16}

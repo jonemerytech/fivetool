@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const TournamentsSection = ({ tournaments }) => {
-  console.log(tournaments)
   return (
     <section className="h-full bg-[url('/images/homeplate.webp')] bg-cover bg-center relative z-0">
       <div className="absolute h-full w-full top-0 left-0 bg-gray-50 opacity-60 z-0"></div>
