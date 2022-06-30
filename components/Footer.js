@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="w-24 h-24 bg-lightGray">
               <Link href="https://www.figureitoutbaseball.com/en/">
                 <a target="_blank">
-                  <Image
+                  <img
                     src="/images/fiobsponsor.jpg"
                     alt="Sponsor 1"
                     height={96}
