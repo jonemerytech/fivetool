@@ -15,7 +15,7 @@ const Tournament = ({ tournament }) => {
           <nav className="hidden left-[15%] w-[35rem] items-center justify-between z-10 xl:flex">
             <div className="pt-2">
               <Image
-                src={'/images/5TT-02.webp'}
+                src="../static/images/5TT-02.webp"
                 alt="5 Tool Logo"
                 height={50}
                 width={50}
