@@ -14,8 +14,8 @@ const Tournament = ({ tournament }) => {
         <div className="flex justify-center items-center">
           <nav className="hidden left-[15%] w-[35rem] items-center justify-between z-10 xl:flex">
             <div className="pt-2">
-              <Image
-                src="../static/images/5TT-02.webp"
+              <img
+                src="/images/5TT-02.webp"
                 alt="5 Tool Logo"
                 height={50}
                 width={50}
@@ -32,7 +32,7 @@ const Tournament = ({ tournament }) => {
         <div className="container mx-auto flex justify-center items-center p-1 mt-[5rem] xl:mt-[3rem]">
           <div className="w-[400px] h-[937px] bg-lightGray mt-3 opacity-90 relative md:w-[700px] px-4 text-center xl:w-[1134px]  xl:mt-15">
             <div className="absolute -top-[75px] left-[33%] md:left-[41%]">
-              <Image
+              <img
                 src={tournament.images[0] || '/images/5TT-02.webp'}
                 alt="5 Tool Logo"
                 height={150}

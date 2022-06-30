@@ -16,7 +16,7 @@ const TournamentsSection = ({ tournaments }) => {
                   className="w-[22rem] h-[24rem] bg-lightGray mt-3 opacity-90 flex flex-col justify-center items-center text-center p-5"
                   key={tournament.id}
                 >
-                  <Image
+                  <img
                     src={tournament.images[0] || '/images/5TT-02.webp'}
                     height={90}
                     width={90}
@@ -36,7 +36,7 @@ const TournamentsSection = ({ tournaments }) => {
                     {tournament.metadata.Dates}
                   </p>
 
-                  <Link href={`tournament/${tournament.id}`}>
+                  <Link href={`/tournament/${tournament.id}`}>
                     <a
                       className="p-3 px-6 pt-2 mt-4 text-white bg-lightBlue rounded baseline"
                       target="_blank"
