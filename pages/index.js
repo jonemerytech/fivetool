@@ -34,13 +34,13 @@ const Home = ({ tournaments }) => {
       <About />
       <Sponsors />
       <Contact />
-      <TournamentsSection tournaments={tournaments || 'Loading'} />
+      <TournamentsSection tournaments={tournaments} />
       <OurTeam />
     </>
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const headers = {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${process.env.API_KEY_PROD}`,
