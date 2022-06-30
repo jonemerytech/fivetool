@@ -120,6 +120,7 @@ const Footer = () => {
             <Link href="https://www.instagram.com/fivetooltournaments/">
               <a target="_blank" rel="noopener noreferrer">
                 <BsInstagram />
+                Test
               </a>
             </Link>
           </div>
