@@ -43,7 +43,7 @@ const OurTeam = () => {
                 width={16}
               />
               <h1 className="text-1xl ml-2">
-                <Link href="tel:317-296-5673">317-296-5673</Link>
+                <Link href="tel:314-508-9356">314-508-9356</Link>
               </h1>
             </div>
           </div>
@@ -81,7 +81,7 @@ const OurTeam = () => {
                 width={16}
               />
               <h1 className="text-1xl ml-2">
-                <Link href="tel:317-296-5673">317-296-5673</Link>
+                <Link href="tel:864-609-7135">864-609-7135</Link>
               </h1>
             </div>
           </div>

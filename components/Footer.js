@@ -56,20 +56,18 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div>
+          <div className="hidden md:block">
             <h1 className="text-lg text-lightGray">Powered By</h1>
-            <div className="w-24 h-24 bg-lightGray">
-              <Link href="https://www.figureitoutbaseball.com/en/">
-                <a target="_blank">
-                  <img
-                    src="/images/fiobsponsor.jpg"
-                    alt="Sponsor 1"
-                    height={96}
-                    width={96}
-                  />
-                </a>
-              </Link>
-            </div>
+            <Link href="https://www.figureitoutbaseball.com/en/">
+              <a target="_blank">
+                <img
+                  src="/images/fiobsponsor.jpg"
+                  alt="Sponsor 1"
+                  height={96}
+                  width={96}
+                />
+              </a>
+            </Link>
           </div>
         </div>
 

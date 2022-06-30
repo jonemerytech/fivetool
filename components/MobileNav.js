@@ -15,7 +15,7 @@ function MobileNav() {
     <nav className="xl:hidden flex items-center flex-wrap bg-lightGray p-1 ">
       <Link href="/">
         <a className="inline-flex items-center p-2 mr-4 ">
-          <Image
+          <img
             height={50}
             width={50}
             src="/images/5TT-02.webp"
