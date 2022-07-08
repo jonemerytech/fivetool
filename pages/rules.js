@@ -1,7 +1,7 @@
 import Link from 'next/link'
 const Rules = () => {
   return (
-    <section>
+    <>
       <div className="flex justify-center items-center">
         <nav className="hidden left-[15%] w-[35rem] items-center justify-between z-10 xl:flex">
           <div className="pt-2">
@@ -20,16 +20,16 @@ const Rules = () => {
         </nav>
       </div>
       <object
-        data="/rules.pdf"
+        data="/info.pdf"
         type="application/pdf"
         width="100%"
-        className="h-screen"
+        height="100%"
       >
         <p>
-          Alternative text - include a link <a href="/rules.pdf">to the PDF!</a>
+          Alternative text - include a link <a href="/info.pdf">to the PDF!</a>
         </p>
       </object>
-    </section>
+    </>
   )
 }
 
