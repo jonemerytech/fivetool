@@ -23,7 +23,7 @@ const Rules = () => {
         data="/rules.pdf"
         type="application/pdf"
         width="100%"
-        height="100%"
+        className="h-screen"
       >
         <p>
           Alternative text - include a link <a href="/rules.pdf">to the PDF!</a>
