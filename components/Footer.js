@@ -33,6 +33,11 @@ const Footer = () => {
                   Tournaments
                 </li>
               </Link>
+              <Link href="/rules">
+                <li className="hover:cursor-pointer hover:text-lightGray">
+                  Rules
+                </li>
+              </Link>
 
               <Link href="mailto:Info@fivetooltournaments.com?subject=Sponsor">
                 <li className="hover:cursor-pointer hover:text-lightGray">

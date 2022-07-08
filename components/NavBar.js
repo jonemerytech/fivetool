@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <nav className="absolute hidden left-[15%] w-[35rem] items-center justify-between z-10 xl:flex">
+    <nav className="absolute hidden left-[15%] w-[40rem] items-center justify-between z-10 xl:flex">
       <div className="pt-2">
         <Image
           src="/images/5TT-02.webp"
@@ -32,6 +32,9 @@ const NavBar = () => {
           <a href="#tournamens" className="text-lightGray hover:text-lightBlue">
             Tournaments
           </a>
+        </Link>
+        <Link href="/rules">
+          <a className="text-lightGray hover:text-lightBlue">Rules</a>
         </Link>
       </div>
     </nav>

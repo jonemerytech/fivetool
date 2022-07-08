@@ -43,7 +43,7 @@ const OurTeam = () => {
                 width={16}
               />
               <h1 className="text-1xl ml-2">
-                <Link href="tel:314-508-9356">314-508-9356</Link>
+                <Link href="tel:317-508-9356">317-508-9356</Link>
               </h1>
             </div>
           </div>
