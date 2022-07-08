@@ -20,13 +20,13 @@ const Rules = () => {
         </nav>
       </div>
       <object
-        data="/info.pdf"
+        data="/rules.pdf"
         type="application/pdf"
         width="100%"
         height="100%"
       >
         <p>
-          Alternative text - include a link <a href="/info.pdf">to the PDF!</a>
+          Alternative text - include a link <a href="/rules.pdf">to the PDF!</a>
         </p>
       </object>
     </>
