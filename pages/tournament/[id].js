@@ -7,7 +7,7 @@ const Tournament = ({ tournament }) => {
   return (
     <>
       <Head>
-        <title>{tournament.name}</title>
+        <title>{tournament.name} | 5-Tool Tournaments</title>
         <link rel="icon" type="image/png" href="/images/5TT-02.webp" />
       </Head>
       <section className="bg-[url('/images/homeplate.webp')] bg-cover bg-center relative z-0">
