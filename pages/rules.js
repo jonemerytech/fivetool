@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+
 const Rules = () => {
   return (
     <>
@@ -38,16 +39,7 @@ const Rules = () => {
           </div>
         </nav>
       </div>
-      <object
-        data="/rules.pdf"
-        type="application/pdf"
-        width="100%"
-        className="h-screen"
-      >
-        <p>
-          Alternative text - include a link <a href="/rules.pdf">to the PDF!</a>
-        </p>
-      </object>
+      <embed src="/rules.pdf" width="100%" className="h-screen"></embed>
     </>
   )
 }
