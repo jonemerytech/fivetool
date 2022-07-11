@@ -39,7 +39,12 @@ const Rules = () => {
           </div>
         </nav>
       </div>
-      <embed src="/rules.pdf" width="100%" className="h-screen"></embed>
+      <iframe
+        src="/rules.pdf"
+        width="100%"
+        className="h-screen"
+        type="application/pdf"
+      ></iframe>
     </>
   )
 }
