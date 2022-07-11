@@ -1,5 +1,10 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
+
+const FileViewer = dynamic(() => import('react-file-viewer'), {
+  ssr: false,
+})
 
 const Rules = () => {
   return (
@@ -39,12 +44,9 @@ const Rules = () => {
           </div>
         </nav>
       </div>
-      <iframe
-        src="/rules.pdf"
-        width="100%"
-        className="h-screen"
-        type="application/pdf"
-      ></iframe>
+      <div className="container mx-auto">
+        <FileViewer fileType="pdf" filePath="/rules.pdf" />
+      </div>
     </>
   )
 }
