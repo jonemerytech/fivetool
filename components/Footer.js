@@ -33,7 +33,7 @@ const Footer = () => {
                   Tournaments
                 </li>
               </Link>
-              <Link href="/rules">
+              <Link href="/rules.pdf">
                 <li className="hover:cursor-pointer hover:text-lightGray">
                   Rules
                 </li>

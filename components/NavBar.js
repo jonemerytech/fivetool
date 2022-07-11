@@ -33,7 +33,7 @@ const NavBar = () => {
             Tournaments
           </a>
         </Link>
-        <Link href="/rules">
+        <Link href="/rules.pdf">
           <a className="text-lightGray hover:text-lightBlue">Rules</a>
         </Link>
       </div>
