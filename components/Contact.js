@@ -29,17 +29,6 @@ const Contact = () => {
               </Link>
             </h1>
           </div>
-          <div className="text-white flex items-center">
-            <Image
-              src="/images/phone.svg"
-              alt="Phone Icon"
-              height={16}
-              width={16}
-            />
-            <h1 className="text-1xl ml-2">
-              <Link href="tel:317-296-5673">317-296-5673</Link>
-            </h1>
-          </div>
 
           <div className="flex justify-center md:justify-start">
             <Link href="#ourteam">
