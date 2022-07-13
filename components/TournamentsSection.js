@@ -9,7 +9,7 @@ const TournamentsSection = ({ tournaments }) => {
         <h1 className="absolute text-4xl text-lightBlue  z-10">Tournaments</h1>
 
         <div className="mt-20 flex flex-col justify-center items-center z-10 top-1/4 xl:grid xl:grid-cols-3 xl:grid-rows-1 xl:gap-2">
-          {tournaments.map((tournament) => {
+          {tournaments?.map((tournament) => {
             if (tournament.metadata.DisplayOnWebsite === 'true') {
               return (
                 <div

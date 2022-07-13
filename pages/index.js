@@ -40,7 +40,7 @@ const Home = ({ tournaments }) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getInitialProps() {
   const headers = {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${process.env.API_KEY_PROD}`,
