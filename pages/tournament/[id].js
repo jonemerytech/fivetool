@@ -7,7 +7,7 @@ const Tournament = ({ tournament }) => {
   return (
     <>
       <Head>
-        <title>{tournament?.name} | 5-Tool Tournaments</title>
+        <title>{tournament.name} | 5-Tool Tournaments</title>
         <link rel="icon" type="image/png" href="/images/5TT-02.webp" />
       </Head>
       <section className="bg-[url('/images/homeplate.webp')] bg-cover bg-center relative z-0">
@@ -33,7 +33,7 @@ const Tournament = ({ tournament }) => {
           <div className="w-[400px] h-[937px] bg-lightGray mt-3 opacity-90 relative md:w-[700px] px-4 text-center xl:w-[1134px]  xl:mt-15">
             <div className="absolute -top-[75px] left-[33%] md:left-[41%]">
               <img
-                src={tournament?.images[0] || '/images/5TT-02.webp'}
+                src={tournament.images[0] || '/images/5TT-02.webp'}
                 alt="5 Tool Logo"
                 height={150}
                 width={150}
@@ -44,22 +44,18 @@ const Tournament = ({ tournament }) => {
             <div className="flex flex-col items-center justify-center mt-24 xl:grid xl:grid-cols-2 xl:grid-rows-1">
               <div>
                 <ul className="list-none">
-                  <li className="text-2xl font-bold">{tournament?.name}</li>
+                  <li className="text-2xl font-bold">{tournament.name}</li>
+                  <li className="text-1xl mt-2">{tournament.metadata.Dates}</li>
                   <li className="text-1xl mt-2">
-                    {tournament?.metadata.Dates}
+                    {tournament.metadata.Fields}
                   </li>
                   <li className="text-1xl mt-2">
-                    {tournament?.metadata.Fields}
+                    {tournament.metadata.AgeGroup}
                   </li>
-                  <li className="text-1xl mt-2">
-                    {tournament?.metadata.AgeGroup}
-                  </li>
-                  <li className="text-1xl mt-2">
-                    {tournament?.metadata.Price}
-                  </li>
+                  <li className="text-1xl mt-2">{tournament.metadata.Price}</li>
                   <li className="mt-2">
                     <Link
-                      href={`https://tourneymachine.com/Public/Results/Tournament.aspx?IDTournament=${tournament?.metadata.URL}`}
+                      href={`https://tourneymachine.com/Public/Results/Tournament.aspx?IDTournament=${tournament.metadata.URL}`}
                     >
                       <a className="p-3 px-6 pt-2 mt-4 text-white bg-lightBlue rounded baseline">
                         Register
@@ -89,7 +85,7 @@ const Tournament = ({ tournament }) => {
 
 export default Tournament
 
-export async function getInitialProps({ params }) {
+export async function getServerSideProps({ params }) {
   const headers = {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${process.env.API_KEY_PROD}`,
@@ -106,7 +102,7 @@ export async function getInitialProps({ params }) {
   }
 }
 
-export async function getInitalPaths() {
+export async function getServerSidePaths() {
   const headers = {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${process.env.API_KEY_PROD}`,
