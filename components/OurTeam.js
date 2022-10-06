@@ -48,7 +48,7 @@ const OurTeam = () => {
             </div>
           </div>
 
-          <div className="px-3 mb-5 xl:px-8">
+          {/* <div className="px-3 mb-5 xl:px-8">
             <Image
               src="/images/Brandon.webp"
               alt="Brandon"
@@ -84,7 +84,7 @@ const OurTeam = () => {
                 <Link href="tel:864-609-7135">864-609-7135</Link>
               </h1>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

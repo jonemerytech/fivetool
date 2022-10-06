@@ -8,6 +8,7 @@ import Sponsors from '../components/Sponsors'
 import TournamentsSection from '../components/TournamentsSection'
 
 import axios from 'axios'
+import Banner from '../components/Banner'
 
 const Home = ({ tournaments }) => {
   return (
@@ -35,6 +36,7 @@ const Home = ({ tournaments }) => {
       <Sponsors />
       <Contact />
       <TournamentsSection tournaments={tournaments} />
+      <Banner />
       <OurTeam />
     </>
   )
