@@ -17,7 +17,8 @@ jobs:
             cd /var/www
             cd fivetool
             sudo git pull
-            ls -a
+            sudo npm run build
+            sudo pm2 restart next
           host: ${{ secrets.HOST }}
           user: jonathane
           pass: ${{ secrets.PASS }}
