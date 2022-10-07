@@ -10,13 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: ls -a via OPEN SSH Private Key
+      - name: deploy changes
         uses: fifsky/ssh-action@master
         with:
           command: |
             cd /var/www
-            ls -a
-            echo "env_var:$FIRST_NAME"
+            cd fivetool
+            sudo git pull
             exit 1
           host: ${{ secrets.HOST }}
           user: jonathane
