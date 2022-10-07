@@ -17,7 +17,6 @@ jobs:
             cd /var/www
             cd fivetool
             sudo git pull
-            exit 1
           host: ${{ secrets.HOST }}
           user: jonathane
           pass: ${{ secrets.PASS }}
