@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="bg-lightGray">
       <div className="container mx-auto h-1/2 p-10" id="about">
-        <h1 className="text-4xl text-lightBlue">About Us</h1>
+        <h1 className="text-4xl text-lightBlue">About Us TEST</h1>
         <p className="text-black mt-8">
           We are utilizing more venues in the Midwest and South-East Coast
           Region to improve scouting opportunities for players participating in
